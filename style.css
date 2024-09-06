@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#canvas1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background: url('background1920x1080.png');
+    background-size: cover;
+    background-position: center;
+}
+.controls {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.controls > button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    font: 30px Bangers;
+    border: 1px solid white;
+    margin: 5px;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+    transition: 0.3s;
+}
+.controls > button:hover, .controls > button:active, .controls > button:focus {
+    background: #7a2c8a;
+    box-shadow: 4px 4px 4px black;
+    text-shadow: 2px 2px 2px black;
+}
+@media screen and (max-width: 900px){
+    #canvas1 {
+        background: url('background1080x1920.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
